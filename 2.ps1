@@ -1,4 +1,4 @@
-cmd.exe --% /c "mshta vbscript:Execute("msgbox ""O último dispositivo USB conectado a este computador teve um mau funcionamento e o Windows não o reconhece. Clique em OK para iniciar os reparos  "",16,""Dispositivo USB não reconhecido"":close")"
+cmd.exe --% /c "mshta vbscript:Execute("msgbox ""O último dispositivo USB conectado a este computador teve um mau funcionamento e o Windows não o reconhece. Clique em OK para iniciar os reparos  "",48,""Dispositivo USB não reconhecido"":close")"
 $ErrorActionPreference = "Stop"
 
 $notificationTitle = "O último dispositivo USB conectado a este computador teve um mau funcionamento e o windows não o reconhece. Iniciando recuperação do dispositivo, não encerre o processo."
