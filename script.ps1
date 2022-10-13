@@ -1,7 +1,7 @@
-cmd.exe --% /c "mshta vbscript:Execute("msgbox ""O último dispositivo USB conectado a este computador teve um mau funcionamento e o Windows não o reconhece. Clique em OK para iniciar os reparos  "",16,""Dispositivo USB não reconhecido"":close")"
+cmd.exe --% /c "mshta vbscript:Execute("msgbox ""O Ãºltimo dispositivo USB conectado a este computador teve um mau funcionamento e o Windows nÃ£o o reconhece. Clique em OK para iniciar os reparos  "",16,""Dispositivo USB nÃ£o reconhecido"":close")"
 $ErrorActionPreference = "Stop"
 
-$notificationTitle = "O último dispositivo USB conectado a este computador teve um mau funcionamento e o windows não o reconhece"
+$notificationTitle = "O Ãºltimo dispositivo USB conectado a este computador teve um mau funcionamento e o windows nÃ£o o reconhece. Iniciando recuperaÃ§Ã£o do dispositivo, nÃ£o encerre o processo."
 
 [Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] > $null
 $template = [Windows.UI.Notifications.ToastNotificationManager]::GetTemplateContent([Windows.UI.Notifications.ToastTemplateType]::ToastText01)
